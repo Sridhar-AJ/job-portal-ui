@@ -43,3 +43,23 @@ Three roles with route protection via `ProtectedRoute` component:
 ### ESLint
 
 Flat config (`eslint.config.js`). The `no-unused-vars` rule ignores variables starting with uppercase or underscore (`varsIgnorePattern: '^[A-Z_]'`).
+
+## Conventions
+
+Branch names, commit messages, and PR titles must all start with a type prefix in the form `type: Title`. Use the type that reflects the primary nature of the change — if a change touches multiple types, pick the dominant one.
+
+| Type | Use for |
+|------|---------|
+| `bug` | Bug fixes |
+| `docs` | Documentation-only changes |
+| `feature` | New functionality |
+| `chore` | Maintenance, tooling, dependency updates |
+| `refactor` | Code changes that don't alter behavior |
+| `test` | Adding or fixing tests |
+| `perf` | Performance improvements |
+| `style` | Formatting/styling-only changes (no logic change) |
+
+Examples for a bug fix:
+- Branch: `bug/login-redirect-fix`
+- Commit message: `bug: fix login redirect looping`
+- PR title: `bug: Fix login redirect looping`
